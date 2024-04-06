@@ -22,7 +22,7 @@ function Home() {
         <strong>Loading...</strong>
       ) : (
         <div className="Movies">
-          {movies.map((movie) => (
+          {movies?.map((movie) => (
             <Movie
               key={movie.id}
               id={movie.id}

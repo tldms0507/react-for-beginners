@@ -9,7 +9,7 @@ import "./App.css"
 
 function App() {
   return (
-    <Router>
+    <Router basename={ProcessingInstruction.env.PUBLIC_URL}>
       <Routes>
         <Route path="/movie/:id" element={<Detail />}></Route>
         {/* 페이지 링크 뒤에 "/movie"를 붙이면 Detail페이지가 나오게 됨 */}
